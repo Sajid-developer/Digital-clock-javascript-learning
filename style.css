@@ -1,0 +1,53 @@
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+text-decoration: none;
+}
+body{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(30deg,rgba(2, 3, 27, 0.9),rgba(0,0,0, 0.9)),url("wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;
+}
+.main-container #clock{
+    text-transform: uppercase;
+    font-family: tahoma;
+    padding:20px;
+    color:rgba(239, 0, 88, 0.2);
+    font-size: 5rem;
+    letter-spacing: 1px;
+    -webkit-text-stroke:0.7px rgb(239, 0, 88);
+    text-shadow: 0px 0px 40px rgb(255, 33, 103);
+    transition:0.3s ease;
+}
+
+@media (max-width:850px) and (min-width:600px){
+.main-container #clock{
+    font-size: 3.3rem;
+    color:rgb(118, 223, 255, 0.2);
+    -webkit-text-stroke:1px rgb(91, 236, 255);
+    text-shadow: 0px 0px 38px rgb(118, 223, 255);
+    }
+}
+@media (max-width:599px){
+    .main-container #clock{
+    font-size: 2rem;
+    color:rgb(44, 244, 255, 0.2);
+    -webkit-text-stroke:0.7px aqua;
+    text-shadow: 0px 0px 38px rgb(44, 244, 255);
+    }
+}
